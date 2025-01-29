@@ -5,16 +5,16 @@ return {
     desc = "Make all backgrounds transparent",
     group = "nobg",
     pattern = "*",
-    callback = function()
-      vim.api.nvim_set_hl(0, "Normal", { bg = "NONE", ctermbg = "NONE" })
+    callback = function(opts)
+      opts =
+        {
+          window = {
+            width = 31,
+          },
+        }, vim.api.nvim_set_hl(0, "Normal", { bg = "NONE", ctermbg = "NONE" })
       vim.api.nvim_set_hl(0, "NeoTreeNormal", { bg = "NONE", ctermbg = "NONE" })
       vim.api.nvim_set_hl(0, "NeoTreeNormalNC", { bg = "NONE", ctermbg = "NONE" })
-      -- etc...
-      -- Get the current window ID
-      local win_id = vim.api.nvim_get_current_win()
-
-      -- Set Neo-tree width to 30 columns
-      vim.api.nvim_win_set_width(win_id, 10)
+      require("neo-tree").setup(opts)
     end,
   }),
 }

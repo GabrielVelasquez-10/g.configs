@@ -8,6 +8,8 @@ return {
     "SupermavenUsePro",
   },
 
+  color = { suggestion_color = "#00ff00" },
+
   opts = {
     keymaps = {
       accept_suggestion = nil, -- handled by nvim-cmp / blink.cmp
