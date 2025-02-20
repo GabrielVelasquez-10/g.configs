@@ -13,6 +13,8 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 vim.opt.rtp:prepend(lazypath)
+vim.opt.cursorline = false
+vim.opt.cursorcolumn = false
 
 require("lazy").setup({
   spec = {
