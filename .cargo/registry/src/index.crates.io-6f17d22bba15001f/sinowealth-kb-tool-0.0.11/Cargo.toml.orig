@@ -1,0 +1,35 @@
+[package]
+name = "sinowealth-kb-tool"
+description = """
+A utility for reading and writing flash contents on Sinowealth 8051-based HID devices through the commonly found ISP bootloader
+"""
+repository = "https://github.com/carlossless/sinowealth-kb-tool"
+version = "0.0.11"
+edition = "2021"
+license = "MIT"
+rust-version = "1.65"
+
+[dependencies]
+clap = "4.1"
+clap-num = "1.0"
+ihex = "3.0"
+md5 = "0.7"
+thiserror = "1.0"
+
+[dependencies.hidapi]
+version = "2.4"
+default-features = false
+features = ["linux-static-libusb"]
+
+[dependencies.log]
+version = "0.4"
+features = ["max_level_debug"]
+
+[dependencies.simple_logger]
+version = "4.3"
+default-features = false
+features = ["stderr", "colors"]
+
+[dependencies.phf]
+version = "0.11"
+features = ["macros"]
