@@ -11,7 +11,7 @@ function exportconfig
       return
 
     case zellij
-      cp -rf ~/.config/zellij/ ~/g.configs/G.Zellij/zellij/
+      cp -rf ~/.config/zellij/ ~/g.configs/G.Zellij/
       if test $status -ne 0
         echo "error: $status"
       else
@@ -20,7 +20,7 @@ function exportconfig
       return
 
     case fish
-      cp -rf ~/.config/fish/ ~/g.configs/G.Fish/fish/
+      cp -rf ~/.config/fish/ ~/g.configs/G.Fish/
       if test $status -ne 0
         echo "error: $status"
       else

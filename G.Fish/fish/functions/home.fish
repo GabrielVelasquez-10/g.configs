@@ -1,3 +1,3 @@
-function home --wraps='cd /home/gabrielavf/' --description 'alias home cd /home/gabrielavf/'
-  cd /home/gabrielavf/ $argv; 
+function home --wraps='cd /home/gabriel/' --description 'alias home cd /home/gabriel/'
+  cd /home/gabriel/ $argv; 
 end

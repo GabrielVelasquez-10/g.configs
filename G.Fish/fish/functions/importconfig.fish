@@ -11,7 +11,7 @@ function importconfig
       return
 
     case zellij
-      cp -rf ~/g.configs/G.Zellij/zellij/ ~/.config/zellij/
+      cp -rf ~/g.configs/G.Zellij/zellij/ ~/.config/
       if test $status -ne 0
         echo "error: $status"
       else
@@ -20,7 +20,7 @@ function importconfig
       return
 
     case fish
-      cp -rf ~/g.configs/G.Fish/fish/ ~/.config/fish/
+      cp -rf ~/g.configs/G.Fish/fish/ ~/.config/
       if test $status -ne 0
         echo "error: $status"
       else
