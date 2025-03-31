@@ -30,9 +30,6 @@ return {
   -- disable trouble
   { "folke/trouble.nvim", enabled = true },
 
-  -- todo comments
-  { "folke/todo-comments.nvim", enabled = true },
-
   -- override nvim-cmp and add cmp-emoji
   {
     "hrsh7th/nvim-cmp",
